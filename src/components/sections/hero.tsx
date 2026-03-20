@@ -10,12 +10,22 @@ import WavyDivider from "@/components/illustrations/wavy-divider";
 export default function Hero() {
   return (
     <section id="hero" className="relative min-h-screen flex items-end overflow-hidden">
-      {/* Background image */}
+      {/* Background — cropped portrait art on mobile, full hero on md+ */}
+      <Image
+        src="/hero-bg-mobile.png"
+        alt="Nations Coffee — entrance and café exterior"
+        fill
+        sizes="100vw"
+        className="object-cover object-center md:hidden"
+        priority
+        quality={90}
+      />
       <Image
         src="/hero-bg.png"
         alt="Nations Coffee storefront with Warli tribal art"
         fill
-        className="object-cover object-center"
+        sizes="100vw"
+        className="hidden md:block object-cover object-center"
         priority
         quality={90}
       />
