@@ -81,7 +81,7 @@ export default function SettingsPage() {
                 <p className="text-xs text-brew-text-muted mt-0.5">
                   {ordersEnabled
                     ? "Customers can place orders right now"
-                    : "Ordering is paused — customers will see a \"closed\" message"}
+                    : "Ordering is paused - customers will see a \"closed\" message"}
                 </p>
               </div>
               <div className="flex items-center gap-2 shrink-0">

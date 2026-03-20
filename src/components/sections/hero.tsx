@@ -10,10 +10,10 @@ import WavyDivider from "@/components/illustrations/wavy-divider";
 export default function Hero() {
   return (
     <section id="hero" className="relative min-h-screen flex items-end overflow-hidden">
-      {/* Background — cropped portrait art on mobile, full hero on md+ */}
+      {/* Background - cropped portrait art on mobile, full hero on md+ */}
       <Image
         src="/hero-bg-mobile.png"
-        alt="Nations Coffee — entrance and café exterior"
+        alt="Nations Coffee - entrance and café exterior"
         fill
         sizes="100vw"
         className="object-cover object-center md:hidden"
@@ -30,7 +30,7 @@ export default function Hero() {
         quality={90}
       />
 
-      {/* Overlay — uniform tint + stronger gradient at bottom for text */}
+      {/* Overlay - uniform tint + stronger gradient at bottom for text */}
       <div className="absolute inset-0 bg-black/25" />
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 

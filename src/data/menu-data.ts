@@ -67,7 +67,7 @@ export const menuItems: MenuItem[] = [
     price: "₹180",
     tag: "Must Try",
     category: "desserts",
-    description: "Best tiramisu in Ranchi — hard to find elsewhere",
+    description: "Best tiramisu in Ranchi - hard to find elsewhere",
     iconName: "cheesecake",
   },
   {
@@ -230,7 +230,7 @@ export const reviews: Review[] = [
     source: "Google",
     stars: 5,
     quote:
-      "I am in love with this place — small, cozy and beautiful. Seating capacity is not more than 25. Coffee was awesome, freshly brewed and perfectly made!",
+      "I am in love with this place - small, cozy and beautiful. Seating capacity is not more than 25. Coffee was awesome, freshly brewed and perfectly made!",
     isLocalGuide: true,
   },
   {

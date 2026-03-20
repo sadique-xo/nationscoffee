@@ -24,7 +24,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: custErr.message }, { status: 500 });
   }
 
-  // Fetch order aggregates (lightweight — only columns needed)
+  // Fetch order aggregates (lightweight - only columns needed)
   const { data: orders, error: ordErr } = await supabaseAdmin
     .from("orders")
     .select("customer_id, total_amount, status, created_at");

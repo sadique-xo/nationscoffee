@@ -1,4 +1,4 @@
-# Nations Coffee — Complete Menu (Transcribed from Wall Menu)
+# Nations Coffee - Complete Menu (Transcribed from Wall Menu)
 
 > **Source:** Actual menu board photos from Nations Coffee, Ranchi
 > **Transcribed:** March 2026
@@ -117,7 +117,7 @@
 ---
 
 ## Notes
-- Only 1 non-veg item (Tex-Mex Chicken sandwich) — café is predominantly vegetarian
+- Only 1 non-veg item (Tex-Mex Chicken sandwich) - café is predominantly vegetarian
 - Espresso listed as "S/D" (Single/Double) at ₹80/75
 - Brand motto on menu board: "May the Lord bless you and keep you; may the Lord make his face shine upon you and be gracious to you; may the Lord turn his face towards you and give you peace."
 - Online tagline: "A Specialty Coffee House with Faith. Hope. Love. Peace."

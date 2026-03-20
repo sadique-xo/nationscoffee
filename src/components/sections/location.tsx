@@ -52,7 +52,7 @@ export default function Location() {
           <BlurFade delay={0.4}>
             <Card className="border-brew-border bg-white shadow-sm">
               <CardContent className="p-6 sm:p-8 space-y-6">
-                {/* Address — New Garden */}
+                {/* Address - New Garden */}
                 <div className="flex items-start gap-3">
                   <div className="shrink-0 w-10 h-10 rounded-full bg-brew-green/10 flex items-center justify-center">
                     <MapPin className="h-5 w-5 text-brew-green" />
@@ -65,7 +65,7 @@ export default function Location() {
                   </div>
                 </div>
 
-                {/* Address — Siromtoli */}
+                {/* Address - Siromtoli */}
                 <div className="flex items-start gap-3">
                   <div className="shrink-0 w-10 h-10 rounded-full bg-brew-green/10 flex items-center justify-center">
                     <MapPin className="h-5 w-5 text-brew-green" />

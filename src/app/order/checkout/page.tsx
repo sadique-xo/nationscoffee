@@ -154,7 +154,7 @@ export default function CheckoutPage() {
     );
   }
 
-  // Order was placed — show loading while redirecting
+  // Order was placed - show loading while redirecting
   if (orderPlaced) {
     return (
       <div className="min-h-screen bg-brew-warm-white flex items-center justify-center">

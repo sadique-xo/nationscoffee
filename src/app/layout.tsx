@@ -26,7 +26,7 @@ const caveat = Caveat({
 export const metadata: Metadata = {
   title: "Nations Coffee • Faith. Hope. Love. Peace.",
   description:
-    "Nations Coffee, Ranchi — specialty coffee, fresh cakes, artisanal teas & good vibes. 4.5★ rated, 45 menu items. Dine-in at New Garden & Siromtoli.",
+    "Nations Coffee, Ranchi - specialty coffee, fresh cakes, artisanal teas & good vibes. 4.5★ rated, 45 menu items. Dine-in at New Garden & Siromtoli.",
   keywords: [
     "Nations Coffee",
     "Nations Coffee Ranchi",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Nations Coffee • Faith. Hope. Love. Peace.",
-    description: "Ranchi's cozy specialty coffee house — freshly brewed coffee, cakes & good vibes.",
+    description: "Ranchi's cozy specialty coffee house - freshly brewed coffee, cakes & good vibes.",
     type: "website",
   },
 };

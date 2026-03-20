@@ -1,4 +1,4 @@
-# Nations Coffee — Brand & Design Guide
+# Nations Coffee - Brand & Design Guide
 
 ---
 
@@ -22,7 +22,7 @@
 ### Primary Palette
 | Token | Hex | Usage |
 |---|---|---|
-| **Brand Olive Green** | `#8BA62B` | Primary — from illustrated logo background |
+| **Brand Olive Green** | `#8BA62B` | Primary - from illustrated logo background |
 | **Brand Black** | `#1A1A1A` | NC monogram, text, menu typography |
 | **Brand Cream/Off-White** | `#F5F0E8` | Menu board background, café walls |
 | **Brand Warm White** | `#FAFAF5` | Page background |
@@ -60,10 +60,10 @@
 ### Suggested fonts (repo already uses)
 | Role | Current Font | Keep/Change |
 |---|---|---|
-| Headings | Montserrat | ✅ In use — clean geometric sans |
-| Body | DM Sans | ✅ Keep — clean, modern, works |
+| Headings | Montserrat | ✅ In use - clean geometric sans |
+| Body | DM Sans | ✅ Keep - clean, modern, works |
 | Subheadings | Montserrat | ✅ Matches headings (shared token) |
-| Accent/Handwritten | Caveat | ✅ Keep — good for personal/faith-based touches |
+| Accent/Handwritten | Caveat | ✅ Keep - good for personal/faith-based touches |
 
 ---
 
@@ -80,12 +80,12 @@
 
 ### Website Design Direction
 - **NOT** loud/trendy café chain aesthetic
-- **YES** clean, warm, minimal — like the menu boards themselves
+- **YES** clean, warm, minimal - like the menu boards themselves
 - White/cream backgrounds with olive green accents
 - Line-art illustrations as decorative elements (match menu board style)
 - Photography-forward (food shots on black plates look great)
 - Faith element subtle but present (the blessing quote, "Faith. Hope. Love. Peace.")
-- Mobile-first — most customers will access via Instagram link
+- Mobile-first - most customers will access via Instagram link
 
 ### Illustration Style (from menu boards)
 The menu boards feature a consistent hand-drawn line art style:
@@ -109,4 +109,4 @@ Visible in customer photos:
 - Cozy wooden table settings
 - Outdoor seating area with plants/greenery visible
 
-**Key food styling:** Black matte plates are the signature — everything is plated on them. Use this in website photography direction.
+**Key food styling:** Black matte plates are the signature - everything is plated on them. Use this in website photography direction.

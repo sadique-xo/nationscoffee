@@ -181,7 +181,7 @@ export default function AdminOrdersPage() {
   async function updateStatus(orderId: string, newStatus: OrderStatus) {
     setUpdatingOrderId(orderId);
 
-    // Optimistic update — apply immediately so the UI feels instant
+    // Optimistic update - apply immediately so the UI feels instant
     const updatedAt = new Date().toISOString();
     setOrders((prev) =>
       prev.map((o) =>
@@ -195,7 +195,7 @@ export default function AdminOrdersPage() {
       .eq("id", orderId);
 
     if (error) {
-      // Rollback on failure — refetch to get the true state
+      // Rollback on failure - refetch to get the true state
       toast.error("Failed to update status");
       fetchOrders();
     }

@@ -1,4 +1,4 @@
-# Nations Coffee — Cursor Implementation Prompt
+# Nations Coffee - Cursor Implementation Prompt
 
 > Attach these files as context when pasting this prompt:
 > - `01-nations-coffee-menu.md` (real menu, 45 items)
@@ -148,7 +148,7 @@ export const menuItems: MenuItem[] = [
     price: "₹180",
     tag: "Must Try",
     category: "desserts",
-    description: "Best tiramisu in Ranchi — hard to find elsewhere",
+    description: "Best tiramisu in Ranchi - hard to find elsewhere",
     iconName: "cheesecake",
   },
   {
@@ -220,7 +220,7 @@ export const reviews: Review[] = [
     source: "Google",
     stars: 5,
     quote:
-      "I am in love with this place — small, cozy and beautiful. Seating capacity is not more than 25. Coffee was awesome, freshly brewed and perfectly made!",
+      "I am in love with this place - small, cozy and beautiful. Seating capacity is not more than 25. Coffee was awesome, freshly brewed and perfectly made!",
     isLocalGuide: true,
   },
   {
@@ -350,7 +350,7 @@ Also update the `:root` shadcn mapped colors:
 export const metadata: Metadata = {
   title: "Nations Coffee • Faith. Hope. Love. Peace.",
   description:
-    "Nations Coffee, Ranchi — specialty coffee, fresh cakes, artisanal teas & good vibes. 4.5★ rated, 45 menu items. Dine-in at New Garden & Siromtoli.",
+    "Nations Coffee, Ranchi - specialty coffee, fresh cakes, artisanal teas & good vibes. 4.5★ rated, 45 menu items. Dine-in at New Garden & Siromtoli.",
   keywords: [
     "Nations Coffee",
     "Nations Coffee Ranchi",
@@ -369,7 +369,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Nations Coffee • Faith. Hope. Love. Peace.",
-    description: "Ranchi's cozy specialty coffee house — freshly brewed coffee, cakes & good vibes.",
+    description: "Ranchi's cozy specialty coffee house - freshly brewed coffee, cakes & good vibes.",
     type: "website",
   },
 };
@@ -427,11 +427,11 @@ Show BOTH outlets:
 
 ---
 
-## PHASE 5: Supabase — Re-seed menu
+## PHASE 5: Supabase - Re-seed menu
 
 ### 5.1 Update `scripts/seed-menu.ts`
 
-The seed script imports `fullMenu` from `menu-data.ts` — since we replaced the entire array, the seed will automatically use the new Nations Coffee menu.
+The seed script imports `fullMenu` from `menu-data.ts` - since we replaced the entire array, the seed will automatically use the new Nations Coffee menu.
 
 Update the `isVeg()` function since there's only 1 non-veg item:
 
@@ -495,9 +495,9 @@ Should return ZERO results.
 ---
 
 ## IMPORTANT RULES
-- DO NOT rename `brew-*` CSS custom property NAMES — only change their VALUES
+- DO NOT rename `brew-*` CSS custom property NAMES - only change their VALUES
 - DO NOT alter the Supabase schema or migration files
 - DO NOT remove the `sadique.co` footer credit
 - DO NOT add any Brew Truck menu items back
-- The fullMenu array above is the COMPLETE menu — 45 items, 9 categories. Do not add or estimate items.
+- The fullMenu array above is the COMPLETE menu - 45 items, 9 categories. Do not add or estimate items.
 - If unsure about phone/WhatsApp number → leave empty with TODO

@@ -193,7 +193,7 @@ export default function OrdersPage() {
     toast.success("Items added to cart!");
   }
 
-  // Not logged in — show phone input
+  // Not logged in - show phone input
   if (!customer.isLoggedIn && !fetched) {
     return (
       <div className="min-h-screen bg-brew-warm-white">

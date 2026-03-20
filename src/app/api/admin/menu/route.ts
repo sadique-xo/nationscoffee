@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { supabaseAdmin } from "@/lib/supabase-admin";
 import { verifyAdmin } from "@/lib/admin-auth";
 
-// GET — fetch all menu items
+// GET - fetch all menu items
 export async function GET() {
   const { data, error } = await supabaseAdmin
     .from("menu_items")
@@ -17,7 +17,7 @@ export async function GET() {
   return NextResponse.json(data);
 }
 
-// POST — add a new menu item
+// POST - add a new menu item
 export async function POST(req: NextRequest) {
   if (!(await verifyAdmin())) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
@@ -37,7 +37,7 @@ export async function POST(req: NextRequest) {
   return NextResponse.json(data);
 }
 
-// PUT — update a menu item
+// PUT - update a menu item
 export async function PUT(req: NextRequest) {
   if (!(await verifyAdmin())) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
@@ -62,7 +62,7 @@ export async function PUT(req: NextRequest) {
   return NextResponse.json(data);
 }
 
-// DELETE — remove a menu item
+// DELETE - remove a menu item
 export async function DELETE(req: NextRequest) {
   if (!(await verifyAdmin())) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });

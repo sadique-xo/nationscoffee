@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { supabaseAdmin } from "@/lib/supabase-admin";
 import { verifyAdmin } from "@/lib/admin-auth";
 
-// GET — fetch all settings
+// GET - fetch all settings
 export async function GET() {
   const { data, error } = await supabaseAdmin
     .from("settings")
@@ -21,7 +21,7 @@ export async function GET() {
   return NextResponse.json(settings);
 }
 
-// PUT — update a setting
+// PUT - update a setting
 export async function PUT(req: NextRequest) {
   if (!(await verifyAdmin())) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });

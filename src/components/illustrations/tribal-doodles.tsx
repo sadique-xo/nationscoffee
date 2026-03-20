@@ -4,7 +4,7 @@ interface TribalDoodlesProps {
 }
 
 /**
- * Warli-inspired tribal art doodles — subtle background accents.
+ * Warli-inspired tribal art doodles - subtle background accents.
  * Simple stick figures, trees, birds & geometric motifs in brand colors.
  */
 export default function TribalDoodles({ className = "", variant = "about" }: TribalDoodlesProps) {
@@ -15,7 +15,7 @@ export default function TribalDoodles({ className = "", variant = "about" }: Tri
   if (variant === "about") {
     return (
       <div className={`pointer-events-none absolute inset-0 overflow-hidden ${className}`} aria-hidden="true">
-        {/* Warli dancer — top right */}
+        {/* Warli dancer - top right */}
         <svg className="absolute top-[8%] right-[6%] w-28 h-28 opacity-[0.15]" viewBox="0 0 60 60" fill="none" style={{ animation: "float 5s ease-in-out infinite" }}>
           <circle cx="30" cy="10" r="5" stroke={olive} strokeWidth="1.5" />
           <line x1="30" y1="15" x2="30" y2="35" stroke={olive} strokeWidth="1.5" />
@@ -26,7 +26,7 @@ export default function TribalDoodles({ className = "", variant = "about" }: Tri
           <path d="M22 30 L30 35 L38 30" stroke={olive} strokeWidth="1.2" fill="none" />
         </svg>
 
-        {/* Tree of life — bottom left */}
+        {/* Tree of life - bottom left */}
         <svg className="absolute bottom-[10%] left-[5%] w-32 h-32 opacity-[0.12]" viewBox="0 0 60 60" fill="none" style={{ animation: "float 6s ease-in-out infinite 1s" }}>
           <line x1="30" y1="55" x2="30" y2="25" stroke={brown} strokeWidth="1.8" />
           <line x1="30" y1="35" x2="18" y2="22" stroke={brown} strokeWidth="1.2" />
@@ -42,7 +42,7 @@ export default function TribalDoodles({ className = "", variant = "about" }: Tri
           <line x1="30" y1="55" x2="36" y2="58" stroke={brown} strokeWidth="1" />
         </svg>
 
-        {/* Bird — middle right */}
+        {/* Bird - middle right */}
         <svg className="absolute top-[45%] right-[4%] w-20 h-20 opacity-[0.15]" viewBox="0 0 40 40" fill="none" style={{ animation: "float 4.5s ease-in-out infinite 0.5s" }}>
           <ellipse cx="20" cy="22" rx="8" ry="5" stroke={olive} strokeWidth="1.3" fill="none" />
           <circle cx="28" cy="18" r="3" stroke={olive} strokeWidth="1.3" fill="none" />
@@ -59,7 +59,7 @@ export default function TribalDoodles({ className = "", variant = "about" }: Tri
   if (variant === "menu") {
     return (
       <div className={`pointer-events-none absolute inset-0 overflow-hidden ${className}`} aria-hidden="true">
-        {/* Person carrying pot — top left */}
+        {/* Person carrying pot - top left */}
         <svg className="absolute top-[6%] left-[4%] w-24 h-24 opacity-[0.12]" viewBox="0 0 50 50" fill="none" style={{ animation: "float 5.5s ease-in-out infinite" }}>
           <circle cx="25" cy="8" r="4" stroke={oliveMuted} strokeWidth="1.3" />
           <line x1="25" y1="12" x2="25" y2="30" stroke={oliveMuted} strokeWidth="1.3" />
@@ -70,7 +70,7 @@ export default function TribalDoodles({ className = "", variant = "about" }: Tri
           <line x1="25" y1="30" x2="32" y2="42" stroke={oliveMuted} strokeWidth="1.3" />
         </svg>
 
-        {/* Sun motif — top right */}
+        {/* Sun motif - top right */}
         <svg className="absolute top-[5%] right-[6%] w-28 h-28 opacity-[0.12]" viewBox="0 0 60 60" fill="none" style={{ animation: "float 6s ease-in-out infinite 2s" }}>
           <circle cx="30" cy="30" r="8" stroke={brown} strokeWidth="1.3" fill="none" />
           <circle cx="30" cy="30" r="4" stroke={brown} strokeWidth="1" fill="none" />
@@ -84,7 +84,7 @@ export default function TribalDoodles({ className = "", variant = "about" }: Tri
           })}
         </svg>
 
-        {/* Geometric dots — bottom right */}
+        {/* Geometric dots - bottom right */}
         <svg className="absolute bottom-[8%] right-[5%] w-20 h-20 opacity-[0.15]" viewBox="0 0 40 40" fill="none" style={{ animation: "float 4s ease-in-out infinite 1s" }}>
           <circle cx="10" cy="10" r="2" fill={olive} />
           <circle cx="20" cy="10" r="2" fill={olive} />
@@ -100,7 +100,7 @@ export default function TribalDoodles({ className = "", variant = "about" }: Tri
   if (variant === "gallery") {
     return (
       <div className={`pointer-events-none absolute inset-0 overflow-hidden ${className}`} aria-hidden="true">
-        {/* Two dancers — top right */}
+        {/* Two dancers - top right */}
         <svg className="absolute top-[5%] right-[8%] w-36 h-24 opacity-[0.12]" viewBox="0 0 80 55" fill="none" style={{ animation: "float 5s ease-in-out infinite" }}>
           <circle cx="25" cy="8" r="4" stroke={olive} strokeWidth="1.3" />
           <line x1="25" y1="12" x2="25" y2="30" stroke={olive} strokeWidth="1.3" />
@@ -117,7 +117,7 @@ export default function TribalDoodles({ className = "", variant = "about" }: Tri
           <line x1="34" y1="12" x2="46" y2="12" stroke={olive} strokeWidth="1" strokeDasharray="2 2" />
         </svg>
 
-        {/* Small hut — bottom left */}
+        {/* Small hut - bottom left */}
         <svg className="absolute bottom-[8%] left-[5%] w-24 h-24 opacity-[0.15]" viewBox="0 0 50 50" fill="none" style={{ animation: "float 4.5s ease-in-out infinite 1.5s" }}>
           <path d="M5 28 L25 8 L45 28" stroke={brown} strokeWidth="1.5" fill="none" />
           <line x1="10" y1="28" x2="10" y2="45" stroke={brown} strokeWidth="1.3" />
@@ -132,7 +132,7 @@ export default function TribalDoodles({ className = "", variant = "about" }: Tri
   if (variant === "testimonials") {
     return (
       <div className={`pointer-events-none absolute inset-0 overflow-hidden ${className}`} aria-hidden="true">
-        {/* Bird pair — top left */}
+        {/* Bird pair - top left */}
         <svg className="absolute top-[6%] left-[6%] w-32 h-20 opacity-[0.12]" viewBox="0 0 65 40" fill="none" style={{ animation: "float 5s ease-in-out infinite 0.8s" }}>
           <ellipse cx="16" cy="20" rx="7" ry="4.5" stroke={oliveMuted} strokeWidth="1.2" fill="none" />
           <circle cx="23" cy="16" r="2.5" stroke={oliveMuted} strokeWidth="1.2" fill="none" />
@@ -148,7 +148,7 @@ export default function TribalDoodles({ className = "", variant = "about" }: Tri
           <line x1="48" y1="24.5" x2="48" y2="32" stroke={oliveMuted} strokeWidth="1" />
         </svg>
 
-        {/* Geometric diamond pattern — bottom right */}
+        {/* Geometric diamond pattern - bottom right */}
         <svg className="absolute bottom-[6%] right-[5%] w-24 h-24 opacity-[0.15]" viewBox="0 0 50 50" fill="none" style={{ animation: "float 4.2s ease-in-out infinite 1.2s" }}>
           <path d="M25 5 L45 25 L25 45 L5 25 Z" stroke={brown} strokeWidth="1.3" fill="none" />
           <path d="M25 15 L35 25 L25 35 L15 25 Z" stroke={brown} strokeWidth="1" fill="none" />
@@ -161,7 +161,7 @@ export default function TribalDoodles({ className = "", variant = "about" }: Tri
   // location variant
   return (
     <div className={`pointer-events-none absolute inset-0 overflow-hidden ${className}`} aria-hidden="true">
-      {/* Person with cup — top left */}
+      {/* Person with cup - top left */}
       <svg className="absolute top-[8%] left-[4%] w-24 h-28 opacity-[0.15]" viewBox="0 0 50 55" fill="none" style={{ animation: "float 5s ease-in-out infinite" }}>
         <circle cx="25" cy="12" r="4" stroke={olive} strokeWidth="1.3" />
         <line x1="25" y1="16" x2="25" y2="36" stroke={olive} strokeWidth="1.3" />
@@ -172,7 +172,7 @@ export default function TribalDoodles({ className = "", variant = "about" }: Tri
         <rect x="34" y="17" width="5" height="6" rx="1" stroke={olive} strokeWidth="1" fill="none" />
       </svg>
 
-      {/* Row of triangles — bottom right */}
+      {/* Row of triangles - bottom right */}
       <svg className="absolute bottom-[6%] right-[4%] w-40 h-16 opacity-[0.12]" viewBox="0 0 80 30" fill="none" style={{ animation: "float 4.5s ease-in-out infinite 1s" }}>
         <path d="M5 28 L13 8 L21 28" stroke={brown} strokeWidth="1.2" fill="none" />
         <path d="M21 28 L29 8 L37 28" stroke={brown} strokeWidth="1.2" fill="none" />

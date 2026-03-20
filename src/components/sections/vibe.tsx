@@ -50,7 +50,7 @@ export default function Vibe() {
               <div className="relative w-full max-w-[400px] sm:max-w-[460px] lg:max-w-[500px] xl:max-w-[560px] mx-auto">
                 <Image
                   src="/store-vibe.png"
-                  alt="Nations Coffee — cozy 25-seat café interior"
+                  alt="Nations Coffee - cozy 25-seat café interior"
                   width={720}
                   height={720}
                   className="w-full h-auto drop-shadow-2xl"

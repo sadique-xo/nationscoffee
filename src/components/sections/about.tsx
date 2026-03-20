@@ -39,7 +39,7 @@ export default function About() {
               <p className="text-brew-text-muted text-base sm:text-lg leading-relaxed mb-8">
                 Nations Coffee is a small, intimate 25-seat specialty coffee house in Ranchi,
                 brewed with faith, hope and love. Known for our matcha frappe, tiramisu, butter
-                pound cake, and artisanal teas — we&apos;re 4.5★ rated on Google with 163 reviews.
+                pound cake, and artisanal teas - we&apos;re 4.5★ rated on Google with 163 reviews.
                 Predominantly vegetarian, family-friendly, and a cozy nook for every kind of coffee lover.
               </p>
             </BlurFade>
