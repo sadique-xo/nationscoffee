@@ -70,7 +70,7 @@ export default function Hero() {
 
       {/* Wavy divider at bottom */}
       <div className="absolute bottom-0 left-0 right-0 z-10">
-        <WavyDivider fill="#FAFAF5" />
+        <WavyDivider fill="#F5F0E8" />
       </div>
     </section>
   );

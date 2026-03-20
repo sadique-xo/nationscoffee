@@ -6,7 +6,7 @@ interface WavyDividerProps {
 
 export default function WavyDivider({
   className = "",
-  fill = "#FAFAF5",
+  fill = "#F5F0E8",
   flip = false,
 }: WavyDividerProps) {
   return (
