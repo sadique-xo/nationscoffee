@@ -1,8 +1,8 @@
 import { Toaster } from "@/components/ui/sonner";
 
 export const metadata = {
-  title: "Admin • Brew Truck",
-  description: "Brew Truck admin dashboard",
+  title: "Admin • Nations Coffee",
+  description: "Nations Coffee admin dashboard",
 };
 
 export default function AdminLayout({

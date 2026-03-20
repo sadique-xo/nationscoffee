@@ -1,5 +1,6 @@
 import Navbar from "@/components/shared/navbar";
 import Hero from "@/components/sections/hero";
+import Vibe from "@/components/sections/vibe";
 import About from "@/components/sections/about";
 import MenuSection from "@/components/sections/menu";
 import Gallery from "@/components/sections/gallery";
@@ -15,6 +16,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <Vibe />
         <About />
         <MenuSection />
         <Gallery />

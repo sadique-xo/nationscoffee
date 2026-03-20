@@ -5,8 +5,6 @@ import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Loader2, Lock } from "lucide-react";
-import Image from "next/image";
-
 export default function AdminLoginPage() {
   const router = useRouter();
   const [password, setPassword] = useState("");
@@ -42,14 +40,7 @@ export default function AdminLoginPage() {
     <div className="min-h-screen bg-brew-warm-white flex items-center justify-center px-4">
       <div className="w-full max-w-sm">
         <div className="text-center mb-8">
-          <Image
-            src="/Brew_logo.png"
-            alt="Brew Truck"
-            width={64}
-            height={64}
-            className="rounded-full mx-auto mb-4"
-          />
-          <h1 className="font-heading text-2xl text-brew-text">Brew Truck</h1>
+          <h1 className="font-heading text-2xl text-brew-text">Nations Coffee</h1>
           <p className="text-brew-text-muted text-sm mt-1">Admin Dashboard</p>
         </div>
 

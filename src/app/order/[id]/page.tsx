@@ -18,8 +18,6 @@ import {
   Loader2,
 } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
-
 interface StatusStep {
   status: OrderStatus;
   label: string;
@@ -205,14 +203,7 @@ export default function OrderTrackingPage() {
       <header className="bg-white border-b border-brew-border">
         <div className="max-w-2xl mx-auto px-4 py-3 flex items-center gap-3">
           <Link href="/order" className="flex items-center gap-2">
-            <Image
-              src="/Brew_logo.png"
-              alt="Brew Truck"
-              width={32}
-              height={32}
-              className="rounded-full"
-            />
-            <span className="font-heading text-lg text-brew-text">Brew Truck</span>
+            <span className="font-heading text-lg text-brew-text">Nations Coffee</span>
           </Link>
         </div>
       </header>
@@ -257,7 +248,7 @@ export default function OrderTrackingPage() {
                 Order Complete
               </h1>
               <p className="text-brew-text-muted text-sm">
-                Thank you for ordering from Brew Truck!
+                Thank you for ordering from Nations Coffee!
               </p>
             </>
           ) : (

@@ -9,7 +9,7 @@ import {
   type ReactNode,
 } from "react";
 
-const STORAGE_KEY = "brew-truck-customer";
+const STORAGE_KEY = "nations-coffee-customer";
 
 interface CustomerSession {
   phone: string;

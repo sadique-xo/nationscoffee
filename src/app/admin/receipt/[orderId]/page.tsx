@@ -111,8 +111,8 @@ export default function ReceiptPage() {
       <div className="max-w-[320px] mx-auto px-4 py-6 font-mono text-sm">
         {/* Header */}
         <div className="text-center mb-4">
-          <h1 className="text-lg font-bold">Brew Truck</h1>
-          <p className="text-xs text-gray-500">Fresh brews on wheels</p>
+          <h1 className="text-lg font-bold">Nations Coffee</h1>
+          <p className="text-xs text-gray-500">Faith. Hope. Love. Peace.</p>
         </div>
 
         <div className="border-t border-dashed border-gray-300 my-3" />
@@ -190,7 +190,7 @@ export default function ReceiptPage() {
         {/* Footer */}
         <div className="text-center text-xs text-gray-500">
           <p className="font-semibold text-gray-700 mb-1">
-            Thank you for visiting Brew Truck!
+            Thank you for visiting Nations Coffee!
           </p>
           <p>See you again soon</p>
         </div>

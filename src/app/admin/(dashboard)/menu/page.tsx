@@ -323,7 +323,7 @@ export default function AdminMenuPage() {
               <Input
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
-                placeholder="e.g. Classic Smash Burger"
+                placeholder="e.g. Cappuccino"
                 className="rounded-lg border-brew-border"
               />
             </div>

@@ -6,6 +6,7 @@ import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import BlurFade from "@/components/magicui/blur-fade";
 import Marquee from "@/components/magicui/marquee";
+import TribalDoodles from "@/components/illustrations/tribal-doodles";
 import { reviews, businessInfo } from "@/data/menu-data";
 
 function ReviewCard({
@@ -74,6 +75,7 @@ function ReviewCard({
 export default function Testimonials() {
   return (
     <section id="testimonials" className="relative py-20 sm:py-28 bg-brew-cream overflow-hidden">
+      <TribalDoodles variant="testimonials" />
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-10">
         <BlurFade>
           <div className="text-center">
@@ -85,14 +87,15 @@ export default function Testimonials() {
             </h2>
 
             {/* Overall rating */}
-            <div className="inline-flex items-center gap-2 bg-white rounded-full px-5 py-2.5 border border-brew-border shadow-sm">
+            <div className="inline-flex flex-wrap items-center justify-center gap-x-2 gap-y-1 bg-white rounded-full px-5 py-2.5 border border-brew-border shadow-sm">
               <div className="flex items-center gap-0.5">
-                {Array.from({ length: 5 }).map((_, i) => (
+                {Array.from({ length: 4 }).map((_, i) => (
                   <Star key={i} className="h-4 w-4 fill-amber-400 text-amber-400" />
                 ))}
+                <Star className="h-4 w-4 fill-amber-400/50 text-amber-400" />
               </div>
-              <span className="text-sm font-semibold text-brew-text">5★ on Google</span>
-              <span className="text-sm text-brew-text-muted">• Loved by Ranchi</span>
+              <span className="text-sm font-semibold text-brew-text">4.5★ on Google</span>
+              <span className="text-sm text-brew-text-muted">• 163 reviews • Loved by Ranchi</span>
             </div>
           </div>
         </BlurFade>

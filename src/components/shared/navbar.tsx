@@ -29,18 +29,22 @@ export default function Navbar() {
       <nav
         className={`flex items-center justify-between transition-all duration-500 ${
           scrolled
-            ? "mt-3 mx-4 max-w-4xl w-full rounded-full bg-white/80 backdrop-blur-xl shadow-lg shadow-black/5 border border-brew-border/50 px-4 py-2"
+            ? "mt-3 mx-4 max-w-4xl w-full rounded-full bg-white/90 backdrop-blur-xl shadow-lg shadow-black/5 border border-brew-border/50 px-4 py-2"
             : "mt-0 mx-auto max-w-7xl w-full px-4 py-3 sm:px-6 lg:px-8"
         }`}
       >
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 shrink-0">
           <Image
-            src="/Brew_logo.png"
-            alt="Brew Truck"
+            src="/NC Logo.png"
+            alt="Nations Coffee"
             width={120}
-            height={48}
-            className={`transition-all duration-500 ${scrolled ? "h-8 w-auto" : "h-10 w-auto"}`}
+            height={40}
+            className={`transition-all duration-500 ${
+              scrolled
+                ? "h-7 w-auto"
+                : "h-9 sm:h-10 w-auto brightness-0 invert"
+            }`}
             priority
           />
         </a>
@@ -51,8 +55,10 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className={`px-3.5 py-1.5 text-sm font-medium text-brew-text-muted hover:text-brew-green-dark transition-all duration-200 rounded-full hover:bg-brew-green/10 ${
-                scrolled ? "text-xs" : ""
+              className={`px-3.5 py-1.5 text-sm font-medium transition-all duration-300 rounded-full ${
+                scrolled
+                  ? "text-xs text-brew-text-muted hover:text-brew-green-dark hover:bg-brew-green/10"
+                  : "text-white/90 hover:text-white hover:bg-white/15"
               }`}
             >
               {link.label}
@@ -61,8 +67,10 @@ export default function Navbar() {
           <a href="/order">
             <Button
               size="sm"
-              className={`ml-2 rounded-full bg-brew-green hover:bg-brew-green-dark text-white transition-all duration-200 ${
-                scrolled ? "h-8 text-xs px-4" : ""
+              className={`ml-2 rounded-full transition-all duration-300 ${
+                scrolled
+                  ? "h-8 text-xs px-4 bg-brew-green hover:bg-brew-green-dark text-white"
+                  : "bg-white text-brew-green-dark hover:bg-brew-cream font-semibold"
               }`}
             >
               Order Now
@@ -72,18 +80,24 @@ export default function Navbar() {
 
         {/* Mobile menu */}
         <Sheet open={open} onOpenChange={setOpen}>
-          <SheetTrigger className="md:hidden inline-flex items-center justify-center rounded-full p-2 text-brew-text-muted hover:bg-brew-green/10 transition-all duration-200">
+          <SheetTrigger
+            className={`md:hidden inline-flex items-center justify-center rounded-full p-2 transition-all duration-300 ${
+              scrolled
+                ? "text-brew-text-muted hover:bg-brew-green/10"
+                : "text-white hover:bg-white/15"
+            }`}
+          >
             {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </SheetTrigger>
           <SheetContent side="right" className="w-[280px] bg-brew-warm-white">
             <div className="flex flex-col gap-1 mt-8">
               <div className="px-4 mb-4">
                 <Image
-                  src="/Brew_logo.png"
-                  alt="Brew Truck"
-                  width={120}
-                  height={48}
-                  className="h-12 w-auto"
+                  src="/NC Logo.png"
+                  alt="Nations Coffee"
+                  width={100}
+                  height={34}
+                  className="h-8 w-auto"
                 />
               </div>
               {navLinks.map((link) => (

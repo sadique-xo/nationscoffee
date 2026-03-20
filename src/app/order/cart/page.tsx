@@ -5,8 +5,6 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Plus, Minus, Trash2, ArrowRight, ShoppingBag, ArrowLeft } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
-
 export default function CartPage() {
   const cart = useCart();
 
@@ -16,14 +14,7 @@ export default function CartPage() {
         <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-sm border-b border-brew-border">
           <div className="max-w-2xl mx-auto px-4 py-3 flex items-center gap-3">
             <Link href="/order" className="flex items-center gap-2">
-              <Image
-                src="/Brew_logo.png"
-                alt="Brew Truck"
-                width={32}
-                height={32}
-                className="rounded-full"
-              />
-              <span className="font-heading text-lg text-brew-text">Brew Truck</span>
+              <span className="font-heading text-lg text-brew-text">Nations Coffee</span>
             </Link>
           </div>
         </header>
@@ -52,14 +43,7 @@ export default function CartPage() {
       <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-sm border-b border-brew-border">
         <div className="max-w-2xl mx-auto px-4 py-3 flex items-center justify-between">
           <Link href="/order" className="flex items-center gap-2">
-            <Image
-              src="/Brew_logo.png"
-              alt="Brew Truck"
-              width={32}
-              height={32}
-              className="rounded-full"
-            />
-            <span className="font-heading text-lg text-brew-text">Brew Truck</span>
+            <span className="font-heading text-lg text-brew-text">Nations Coffee</span>
           </Link>
           <span className="text-sm text-brew-text-muted font-medium">Cart</span>
         </div>

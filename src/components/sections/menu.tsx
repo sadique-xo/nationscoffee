@@ -6,11 +6,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import BlurFade from "@/components/magicui/blur-fade";
+import TribalDoodles from "@/components/illustrations/tribal-doodles";
 import { menuItems } from "@/data/menu-data";
 
-import BurgerIcon from "@/components/illustrations/burger-icon";
-import FriesIcon from "@/components/illustrations/fries-icon";
-import PizzaIcon from "@/components/illustrations/pizza-icon";
 import IcedCoffeeIcon from "@/components/illustrations/iced-coffee-icon";
 import HotCoffeeIcon from "@/components/illustrations/hot-coffee-icon";
 import BobaTeaIcon from "@/components/illustrations/boba-tea-icon";
@@ -18,9 +16,6 @@ import CheesecakeIcon from "@/components/illustrations/cheesecake-icon";
 import BrownieIcon from "@/components/illustrations/brownie-icon";
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
-  burger: BurgerIcon,
-  fries: FriesIcon,
-  pizza: PizzaIcon,
   "iced-coffee": IcedCoffeeIcon,
   "hot-coffee": HotCoffeeIcon,
   "boba-tea": BobaTeaIcon,
@@ -33,33 +28,33 @@ const tagColors: Record<string, string> = {
   "Must Try": "bg-brew-green/10 text-brew-green border-brew-green/30",
   Popular: "bg-blue-50 text-blue-600 border-blue-200",
   Signature: "bg-purple-50 text-purple-600 border-purple-200",
-  "Fun Pick": "bg-pink-50 text-pink-600 border-pink-200",
-  New: "bg-amber-50 text-amber-600 border-amber-200",
-  Indulgence: "bg-rose-50 text-rose-600 border-rose-200",
+  Classic: "bg-stone-50 text-stone-600 border-stone-200",
+  Premium: "bg-amber-50 text-amber-600 border-amber-200",
+  Refreshing: "bg-cyan-50 text-cyan-600 border-cyan-200",
 };
 
 const categories = [
-  { value: "food", label: "Food" },
   { value: "drinks", label: "Drinks" },
   { value: "desserts", label: "Desserts" },
 ] as const;
 
 export default function MenuSection() {
-  const [activeTab, setActiveTab] = useState("food");
+  const [activeTab, setActiveTab] = useState("drinks");
 
   const filteredItems = menuItems.filter((item) => item.category === activeTab);
 
   return (
     <section id="menu" className="relative py-20 sm:py-28 bg-brew-cream">
+      <TribalDoodles variant="menu" />
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <BlurFade>
           <div className="text-center mb-12">
             <p className="font-accent text-lg text-brew-orange mb-2">
-              just the highlights...
+              our favourites
             </p>
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-brew-green-dark">
-              What&apos;s Cooking
+              What&apos;s Brewing
             </h2>
           </div>
         </BlurFade>

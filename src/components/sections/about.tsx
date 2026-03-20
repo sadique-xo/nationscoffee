@@ -3,16 +3,18 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import NumberTicker from "@/components/magicui/number-ticker";
 import CoffeeCup from "@/components/illustrations/coffee-cup";
+import TribalDoodles from "@/components/illustrations/tribal-doodles";
 
 const stats = [
-  { value: 50, prefix: "", suffix: "+", label: "Items on Our Menu" },
-  { value: 20, prefix: "₹", suffix: "", label: "Our Famous Gur Tea" },
-  { value: 5, prefix: "", suffix: "★", label: "Rated on Google" },
+  { value: 45, prefix: "", suffix: "", label: "Items on Our Menu" },
+  { value: 60, prefix: "₹", suffix: "", label: "Starting From" },
+  { value: 4, prefix: "", suffix: ".5★", label: "Avg. on Google" },
 ];
 
 export default function About() {
   return (
     <section id="about" className="relative py-20 sm:py-28 bg-brew-warm-white">
+      <TribalDoodles variant="about" />
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Illustration */}
@@ -29,16 +31,16 @@ export default function About() {
                 Our story
               </p>
               <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-brew-green-dark mb-6">
-                More Than Just a Truck
+                More Than Just Coffee
               </h2>
             </BlurFade>
 
             <BlurFade delay={0.4}>
               <p className="text-brew-text-muted text-base sm:text-lg leading-relaxed mb-8">
-                What started as a passion for great coffee and honest food, Brew Truck
-                has become Ranchi&apos;s go-to spot for quick bites, epic brews, and good times.
-                From our signature Gur Tea at ₹20 to loaded Korean Fried Chicken, we believe
-                great food doesn&apos;t need a fancy address • just a great recipe and a lot of love.
+                Nations Coffee is a small, intimate 25-seat specialty coffee house in Ranchi,
+                brewed with faith, hope and love. Known for our matcha frappe, tiramisu, butter
+                pound cake, and artisanal teas — we&apos;re 4.5★ rated on Google with 163 reviews.
+                Predominantly vegetarian, family-friendly, and a cozy nook for every kind of coffee lover.
               </p>
             </BlurFade>
 

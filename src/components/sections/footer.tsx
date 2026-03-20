@@ -37,6 +37,11 @@ export default function Footer() {
             </a>
           </div>
 
+          {/* Blessing quote */}
+          <p className="text-xs text-white/40 italic max-w-lg mx-auto mb-6">
+            {businessInfo.blessingQuote}
+          </p>
+
           <Separator className="bg-white/20 mb-6" />
 
           {/* Copyright */}

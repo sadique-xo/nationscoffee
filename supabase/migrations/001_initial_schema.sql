@@ -1,5 +1,5 @@
 -- ============================================
--- Brew Truck • Initial Database Schema
+-- Nations Coffee • Initial Database Schema
 -- ============================================
 
 -- Customers table

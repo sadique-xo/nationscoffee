@@ -1,16 +1,9 @@
 import type { Metadata } from "next";
-import { Audiowide, Inter, DM_Sans, Caveat } from "next/font/google";
+import { Montserrat, DM_Sans, Caveat } from "next/font/google";
 import "./globals.css";
 
-const audiowide = Audiowide({
-  variable: "--font-audiowide",
-  subsets: ["latin"],
-  weight: ["400"],
-  display: "swap",
-});
-
-const inter = Inter({
-  variable: "--font-inter",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   display: "swap",
@@ -31,17 +24,28 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
-  title: "Brew Truck • Sip | Bite | Repeat",
+  title: "Nations Coffee • Faith. Hope. Love. Peace.",
   description:
-    "Ranchi's favourite food truck • coffee, bites & good vibes. 50+ menu items, amazing coffee, and street food that hits different.",
-  keywords: ["Brew Truck", "Ranchi", "food truck", "cafe", "coffee", "street food"],
+    "Nations Coffee, Ranchi — specialty coffee, fresh cakes, artisanal teas & good vibes. 4.5★ rated, 45 menu items. Dine-in at New Garden & Siromtoli.",
+  keywords: [
+    "Nations Coffee",
+    "Nations Coffee Ranchi",
+    "coffee Ranchi",
+    "cafe Ranchi",
+    "specialty coffee",
+    "matcha frappe Ranchi",
+    "tiramisu Ranchi",
+    "cheesecake Ranchi",
+    "Siromtoli cafe",
+    "best cafe Ranchi",
+  ],
   icons: {
-    icon: "/Brew_logo.png",
-    apple: "/apple-touch-icon.png",
+    icon: "/NationsLogositeicon.png",
+    apple: "/NC Logo.png",
   },
   openGraph: {
-    title: "Brew Truck • Sip | Bite | Repeat",
-    description: "Ranchi's favourite food truck • coffee, bites & good vibes.",
+    title: "Nations Coffee • Faith. Hope. Love. Peace.",
+    description: "Ranchi's cozy specialty coffee house — freshly brewed coffee, cakes & good vibes.",
     type: "website",
   },
 };
@@ -54,7 +58,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${audiowide.variable} ${inter.variable} ${dmSans.variable} ${caveat.variable}`}
+      className={`${montserrat.variable} ${dmSans.variable} ${caveat.variable}`}
       suppressHydrationWarning
     >
       <body className="antialiased">{children}</body>

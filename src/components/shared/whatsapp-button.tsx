@@ -2,6 +2,16 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { businessInfo } from "@/data/menu-data";
+
+function chatHref(): string {
+  const digits = businessInfo.whatsapp.replace(/\D/g, "");
+  if (digits.length > 0) {
+    return `https://wa.me/${digits}`;
+  }
+  // TODO: Remove Instagram fallback once client sets businessInfo.whatsapp (wa.me link).
+  return businessInfo.instagram;
+}
 
 export default function WhatsAppButton() {
   const [visible, setVisible] = useState(false);
@@ -16,7 +26,7 @@ export default function WhatsAppButton() {
     <AnimatePresence>
       {visible && (
         <motion.a
-          href="https://www.instagram.com/brew_truck/"
+          href={chatHref()}
           target="_blank"
           rel="noopener noreferrer"
           initial={{ scale: 0, opacity: 0 }}

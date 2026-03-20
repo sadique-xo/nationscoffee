@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import BlurFade from "@/components/magicui/blur-fade";
+import TribalDoodles from "@/components/illustrations/tribal-doodles";
 import { businessInfo } from "@/data/menu-data";
 
 function getTodayDay(): string {
@@ -16,6 +17,7 @@ export default function Location() {
 
   return (
     <section id="location" className="relative py-20 sm:py-28 bg-brew-warm-white">
+      <TribalDoodles variant="location" />
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <BlurFade>
@@ -41,7 +43,7 @@ export default function Location() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Brew Truck Location on Google Maps"
+                title="Nations Coffee location on Google Maps"
               />
             </div>
           </BlurFade>
@@ -50,16 +52,29 @@ export default function Location() {
           <BlurFade delay={0.4}>
             <Card className="border-brew-border bg-white shadow-sm">
               <CardContent className="p-6 sm:p-8 space-y-6">
-                {/* Address */}
+                {/* Address — New Garden */}
                 <div className="flex items-start gap-3">
                   <div className="shrink-0 w-10 h-10 rounded-full bg-brew-green/10 flex items-center justify-center">
                     <MapPin className="h-5 w-5 text-brew-green" />
                   </div>
                   <div>
                     <h3 className="font-subheading font-semibold text-brew-text mb-0.5">
-                      Location
+                      New Garden (Primary)
                     </h3>
                     <p className="text-brew-text-muted text-sm">{businessInfo.address}</p>
+                  </div>
+                </div>
+
+                {/* Address — Siromtoli */}
+                <div className="flex items-start gap-3">
+                  <div className="shrink-0 w-10 h-10 rounded-full bg-brew-green/10 flex items-center justify-center">
+                    <MapPin className="h-5 w-5 text-brew-green" />
+                  </div>
+                  <div>
+                    <h3 className="font-subheading font-semibold text-brew-text mb-0.5">
+                      Siromtoli (Original)
+                    </h3>
+                    <p className="text-brew-text-muted text-sm">{businessInfo.secondaryAddress}</p>
                   </div>
                 </div>
 

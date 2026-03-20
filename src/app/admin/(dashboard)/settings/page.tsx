@@ -56,7 +56,7 @@ export default function SettingsPage() {
       <div>
         <h1 className="font-heading text-xl text-brew-text">Settings</h1>
         <p className="text-xs text-brew-text-muted mt-0.5">
-          Manage your Brew Truck configuration
+          Manage your Nations Coffee configuration
         </p>
       </div>
 
@@ -143,7 +143,7 @@ export default function SettingsPage() {
       {/* App info */}
       <div className="text-center pb-8">
         <p className="text-xs text-brew-text-muted">
-          Brew Truck • Built by{" "}
+          Nations Coffee • Built by{" "}
           <span className="font-medium">sadique.co</span>
         </p>
       </div>

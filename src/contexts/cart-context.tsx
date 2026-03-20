@@ -93,7 +93,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
   // Hydrate from localStorage on mount
   useEffect(() => {
     try {
-      const saved = localStorage.getItem("brew-truck-cart");
+      const saved = localStorage.getItem("nations-coffee-cart");
       if (saved) {
         const items = JSON.parse(saved) as CartItem[];
         dispatch({ type: "HYDRATE", payload: items });
@@ -106,7 +106,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
   // Persist to localStorage on change
   useEffect(() => {
     try {
-      localStorage.setItem("brew-truck-cart", JSON.stringify(state.items));
+      localStorage.setItem("nations-coffee-cart", JSON.stringify(state.items));
     } catch {
       // ignore
     }

@@ -6,7 +6,6 @@ import { useCart } from "@/contexts/cart-context";
 import { Button } from "@/components/ui/button";
 import { Plus, Minus, Loader2 } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
 import type { DbMenuItem } from "@/types/database";
 
 interface MenuCategory {
@@ -144,18 +143,11 @@ export default function OrderPage() {
   if (!ordersEnabled) {
     return (
       <div className="min-h-screen bg-brew-warm-white flex flex-col items-center justify-center px-4 text-center">
-        <Image
-          src="/Brew_logo.png"
-          alt="Brew Truck"
-          width={64}
-          height={64}
-          className="rounded-full mb-4"
-        />
         <h1 className="font-heading text-2xl text-brew-text mb-2">
           We&apos;re Currently Closed
         </h1>
         <p className="text-brew-text-muted text-sm max-w-xs">
-          Brew Truck is not accepting orders right now. Please check back later!
+          Nations Coffee is not accepting orders right now. Please check back later!
         </p>
       </div>
     );
@@ -167,14 +159,7 @@ export default function OrderPage() {
       <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-sm border-b border-brew-border">
         <div className="max-w-2xl mx-auto px-4 py-3 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-            <Image
-              src="/Brew_logo.png"
-              alt="Brew Truck"
-              width={32}
-              height={32}
-              className="rounded-full"
-            />
-            <span className="font-heading text-lg text-brew-text">Brew Truck</span>
+            <span className="font-heading text-lg text-brew-text">Nations Coffee</span>
           </Link>
           <span className="text-sm text-brew-text-muted font-medium">Menu</span>
         </div>

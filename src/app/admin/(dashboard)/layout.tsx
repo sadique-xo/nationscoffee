@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { AdminProvider, useAdmin } from "@/contexts/admin-context";
 import {
@@ -58,15 +57,8 @@ function DashboardShell({ children }: { children: React.ReactNode }) {
         {/* Logo */}
         <div className="px-5 py-5 border-b border-brew-border/50">
           <Link href="/admin/orders" className="flex items-center gap-2.5">
-            <Image
-              src="/Brew_logo.png"
-              alt="Brew Truck"
-              width={32}
-              height={32}
-              className="rounded-full"
-            />
             <span className="font-heading text-base text-brew-text">
-              Brew Truck
+              Nations Coffee
             </span>
           </Link>
         </div>
@@ -120,15 +112,8 @@ function DashboardShell({ children }: { children: React.ReactNode }) {
       <header className="md:hidden sticky top-0 z-40 bg-white/95 backdrop-blur-sm border-b border-brew-border">
         <div className="px-4 py-3 flex items-center justify-between">
           <Link href="/admin/orders" className="flex items-center gap-2">
-            <Image
-              src="/Brew_logo.png"
-              alt="Brew Truck"
-              width={28}
-              height={28}
-              className="rounded-full"
-            />
             <span className="font-heading text-base text-brew-text">
-              Brew Truck
+              Nations Coffee
             </span>
           </Link>
           <div className="flex items-center gap-1">

@@ -4,7 +4,7 @@
  * Usage:
  *   npx tsx scripts/seed-menu.ts
  *
- * Requires NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY in .env.local
+ * Requires NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_SERVICE_ROLE_KEY in .env.local
  */
 
 import { createClient } from "@supabase/supabase-js";
@@ -27,19 +27,44 @@ function parsePrice(priceStr: string): number {
 }
 
 function isVeg(name: string): boolean {
-  const nonVegKeywords = [
-    "chicken",
-    "peri peri fried",
-    "nugget",
-    "popcorn",
-    "wings",
-    "junglee",
-  ];
+  const nonVegKeywords = ["chicken", "tex-mex"];
   const lower = name.toLowerCase();
   return !nonVegKeywords.some((kw) => lower.includes(kw));
 }
 
 async function seed() {
+  // Clear dependent tables first (foreign key constraints)
+  const { error: orderItemsError } = await supabase
+    .from("order_items")
+    .delete()
+    .neq("id", "00000000-0000-0000-0000-000000000000");
+  if (orderItemsError) {
+    console.error("Error clearing order_items:", orderItemsError.message);
+    process.exit(1);
+  }
+  console.log("Cleared existing order items.");
+
+  const { error: ordersError } = await supabase
+    .from("orders")
+    .delete()
+    .neq("id", "00000000-0000-0000-0000-000000000000");
+  if (ordersError) {
+    console.error("Error clearing orders:", ordersError.message);
+    process.exit(1);
+  }
+  console.log("Cleared existing orders.");
+
+  // Clear existing menu items
+  const { error: deleteError } = await supabase
+    .from("menu_items")
+    .delete()
+    .neq("id", "00000000-0000-0000-0000-000000000000");
+  if (deleteError) {
+    console.error("Error clearing menu:", deleteError.message);
+    process.exit(1);
+  }
+  console.log("Cleared existing menu items.");
+
   console.log("Seeding menu items...\n");
 
   let sortOrder = 0;

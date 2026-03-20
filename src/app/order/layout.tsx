@@ -4,12 +4,12 @@ import { OrderShell } from "@/components/order/order-shell";
 import { Toaster } from "@/components/ui/sonner";
 
 export const metadata = {
-  title: "Order • Brew Truck",
+  title: "Order • Nations Coffee",
   description:
-    "Browse our full menu and place your order. Brew Truck, Ranchi.",
+    "Browse our full menu and place your order. Nations Coffee, Ranchi.",
   openGraph: {
-    title: "Order from Brew Truck",
-    description: "Browse 50+ items and order directly from Ranchi's favourite food truck.",
+    title: "Order from Nations Coffee",
+    description: "Browse 45 items and order directly from Nations Coffee in Ranchi.",
   },
 };
 
